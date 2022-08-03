@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+    <!-- Preloader -->
+
+    <div class="preloader">
+        <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path fill="currentColor"
+            d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+          </path>
+        </svg>
+    </div>
+
+
+    <!-- Header -->
+
+    <header data-anijs="if: click, do: pulse animated, to: $children .content-wrapper">
+        <div class="header__block">
+            <div class="header__logo">
+                <h1><span>FRONT</span>-Sabirov</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><button class="about--1">Обо мне</button></li>
+                    <li><button class="achievements--1">Достижения</button></li>
+                    <li><button class="portfolio--1">Портфолио</button></li>
+                    <li><button class="contact--1">Контакты</button></li>
+                </ul>
+            </nav>
+            <div class="menu__open">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Menu -->
+
+    <div class="menu__container">
+        <div class="menu__close"></div>
+        <div class="menu__block">
+            <div class="menu__item">
+                <button class="about--2">Обо мне</button>
+                <button class="achievements--2">Достижения</button>
+                <button class="portfolio--2">Портфолио</button>
+                <button class="contact--2">Контакты</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Section About -->
+
+    <section class="section__about">
+        <div class="about__block">
+            <div class="about__item">
+                <h1>Sabirov Dilshod <sup>IT</sup></h1>
+                <h3>Web-Разработчик / HTML-Верстальщик / JavaScript</h3>
+                <button class="scroll--to about--3">Обо мне</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="about--me">
+        <div class="about__container">
+            <h1>Обо мне</h1>
+            <div class="about--item">
+                <div data-tilt class="about__card">
+                    <h2>Немного о себе</h2>
+                    <img src="/logo/user.png" alt="">
+                    <p>
+                        Привет! Меня зовут Сабиров Дилшод.
+                        Я занимаюсь web-разработкой с нуля.
+                        Выполняю верстку и программирование сайтов,а так же доработку,
+                        добавляя функционал на сайт!
+                        Верстаю адаптивный сайт, таким образом сайт получается красивым на любом устройстве!
+                    </p>
+                </div>
+                <div data-tilt class="about__card">
+                    <h2>Знания и Умения</h2>
+                    <img src="/logo/jobs.png" alt="">
+                    <p>
+                        Знаю HTML | CSS | JavaScript<br>
+                        Могу добавлять некие библиотеки для различных анимаций, карусели и т.д. 
+                        Так же знаю фреймворки jQuery, Vue.js и Bootstrap.
+                    </p>
+                </div>
+                <div data-tilt class="about__card about__card--1">
+                    <h2>Самообразование</h2>
+                    <img src="/logo/образование.png" alt="">
+                    <p>
+                        Оффлайн курсы, видеоуроки, книги, статьи...
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section Sertificate -->
+
+    <section class="section__sertificate">
+      <div class="sertificate__container">
+        <h1>Достижения</h1>
+        <div class="sertificate__block">
+          <div class="sertificate__item">
+            <img class="sertificate1 sertificate" src="/сертификат2.jpg" alt="">
+            <img class="sertificate2 sertificate" src="/сертификат1.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal__sertificate1">
+      <div class="modal__sertificate">
+        <div class="modal__sertificate--close"></div>
+        <img src="/сертификат2.jpg" alt="">
+      </div>
+    </div>
+    <div class="modal__sertificate2">
+      <div class="modal__sertificate">
+        <div class="modal__sertificate--close"></div>
+        <img src="/сертификат1.jpg" alt="">
+      </div>
+    </div>
+
+
+    <!-- Section Portfolio -->
+
+    <section class="section__portfolio">
+        <div class="portfolio__container">
+            <h1>Портфолио</h1>
+            <h3>ЛИСТАЙТЕ <span>карусель чтобы посмотреть мои работы</span></h3>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="/portfolio/1.png"  alt=""/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/portfolio/2.png" alt=""/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/portfolio/3.png" alt=""/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/portfolio/4.png" alt=""/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/portfolio/5.png" alt=""/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/portfolio/6.png" alt=""/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/portfolio/7.png" alt=""/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/portfolio/8.png" alt=""/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/portfolio/9.png" alt=""/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/portfolio/10.png" alt=""/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/portfolio/11.png" alt=""/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/portfolio/12.png" alt=""/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/portfolio/13.png" alt=""/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/portfolio/14.png" alt=""/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/portfolio/15.png" alt=""/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/portfolio/16.png" alt=""/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/portfolio/17.png" alt=""/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/portfolio/18.png" alt=""/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/portfolio/19.png" alt=""/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/portfolio/20.png" alt=""/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/portfolio/21.png" alt=""/>
+                  </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+        </div>
+    </section>
+
+    
+    <!-- Footer -->
+
+    <footer>
+        <div class="footer__container">
+            <div class="footer__block">
+                <h1>Контакты:</h1>
+                <a href="#" target="_blank">+(992)-004-44-04-39</a><br>
+                <a href="#" target="_blank">dilshodsabirov.04@gmail.com</a>
+                <div class="footer__contact">
+                    <a href="https://www.instagram.com/_ssab1ro0v_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://vk.com/ssab1ro0v" target="_blank"><i class="fa-brands fa-vk"></i></a>
+                    <a href="https://t.me/ssab1rov" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://www.facebook.com/dilshod.sobirov.1042" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer__logo"> 
+                <h1><span>FRONT</span>-Sabirov</h1>
+            </div>
+        </div>
+        <div class="footer__info">
+            <div class="footer__item1"></div>
+            <div class="footer__copyright">Copyright 2022</div>
+            <div class="footer__item1"></div>
+        </div>
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/a0ddafbd41.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/AniJS/0.9.3/anijs-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <script src="add.js"></script>
+</body>
+</html>
